@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quarkus-getting-start
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: quarkus-getting-start
+  template:
+    metadata:
+      labels:
+        app: quarkus-getting-start
+    spec:
+      containers:
+      - image: quarkus-quickstart/getting-started:latest
+        name: quarkus-getting-start
+        ports:
+        - containerPort: 8080
