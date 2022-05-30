@@ -13,7 +13,7 @@ spec:
         app: quarkus-getting-start
     spec:
       containers:
-      - image: chihkang/quarkus-quickstart:1.0
+      - image: chihkang/quarkus-quickstart:1.0.0-multistage
         name: quarkus-getting-start
         ports:
         - containerPort: 8080
