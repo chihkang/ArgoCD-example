@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: quarkus-getting-start
+  labels:
+    app: quarkus-getting-start
 spec:
   replicas: 1
   selector:
